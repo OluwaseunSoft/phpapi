@@ -12,6 +12,9 @@ class User{
     public $lastname;
     public $email;
     public $password;
+    public $role;
+    public $phone_number;
+    public $status_ind;
  
     // constructor
     public function __construct($db){
@@ -26,7 +29,10 @@ class User{
                     firstname = :firstname,
                     lastname = :lastname,
                     email = :email,
-                    password = :password";
+                    password = :password,
+                    phone_number = phone_number, 
+                    role = :role,
+                    status_ind = :status_ind";
      
         // prepare the query
         $stmt = $this->conn->prepare($query);
@@ -36,11 +42,17 @@ class User{
         $this->lastname=htmlspecialchars(strip_tags($this->lastname));
         $this->email=htmlspecialchars(strip_tags($this->email));
         $this->password=htmlspecialchars(strip_tags($this->password));
+        $this->phone_number=htmlspecialchars(strip_tags($this->phone_number));
+        $this->role=htmlspecialchars(strip_tags($this->role));
+        $this->status_ind=htmlspecialchars(strip_tags($this->status_ind));
      
         // bind the values
         $stmt->bindParam(':firstname', $this->firstname);
         $stmt->bindParam(':lastname', $this->lastname);
         $stmt->bindParam(':email', $this->email);
+        $stmt->bindParam(':phone_number', $this->phone_number);
+        $stmt->bindParam(':role', $this->role);
+        $stmt->bindParam(':status_ind', $this->status_ind);
      
         // hash the password before saving to database
         $password_hash = password_hash($this->password, PASSWORD_BCRYPT);
