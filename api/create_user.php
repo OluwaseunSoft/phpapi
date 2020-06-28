@@ -25,6 +25,9 @@ $user->firstname = $data->firstname;
 $user->lastname = $data->lastname;
 $user->email = $data->email;
 $user->password = $data->password;
+$user->phone_number = $data->phone_number;
+$user->role = $data->role;
+$user->status_ind = $data->status_ind;
  
 if(
     !empty($user->firstname) &&

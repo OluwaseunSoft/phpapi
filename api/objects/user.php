@@ -30,7 +30,7 @@ class User{
                     lastname = :lastname,
                     email = :email,
                     password = :password,
-                    phone_number = phone_number, 
+                    phone_number = :phone_number, 
                     role = :role,
                     status_ind = :status_ind";
      
