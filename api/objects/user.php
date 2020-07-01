@@ -32,7 +32,7 @@ class User{
                     password = :password,
                     phone_number = :phone_number, 
                     role = :role,
-                    status_ind = :status_ind";
+                    status_ind = 'D'";
      
         // prepare the query
         $stmt = $this->conn->prepare($query);
@@ -44,7 +44,7 @@ class User{
         $this->password=htmlspecialchars(strip_tags($this->password));
         $this->phone_number=htmlspecialchars(strip_tags($this->phone_number));
         $this->role=htmlspecialchars(strip_tags($this->role));
-        $this->status_ind=htmlspecialchars(strip_tags($this->status_ind));
+       // $this->status_ind=htmlspecialchars(strip_tags($this->status_ind));
      
         // bind the values
         $stmt->bindParam(':firstname', $this->firstname);
@@ -52,7 +52,7 @@ class User{
         $stmt->bindParam(':email', $this->email);
         $stmt->bindParam(':phone_number', $this->phone_number);
         $stmt->bindParam(':role', $this->role);
-        $stmt->bindParam(':status_ind', $this->status_ind);
+        //$stmt->bindParam(':status_ind', $this->status_ind);
      
         // hash the password before saving to database
         $password_hash = password_hash($this->password, PASSWORD_BCRYPT);
@@ -72,7 +72,7 @@ function emailExists(){
     // query to check if email exists
     $query = "SELECT id, firstname, lastname, password
             FROM " . $this->table_name . "
-            WHERE email = ?
+            WHERE status_ind = 'A' and email = ?
             LIMIT 0,1";
  
     // prepare the query
@@ -101,6 +101,7 @@ function emailExists(){
         $this->firstname = $row['firstname'];
         $this->lastname = $row['lastname'];
         $this->password = $row['password'];
+        $this->status_ind = $row['status_ind'];
  
         // return true because email exists in the database
         return true;
