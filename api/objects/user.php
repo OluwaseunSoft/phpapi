@@ -22,8 +22,9 @@ class User{
     }
  
     function create(){
-        $existingEmail = "SELECT * FROM " .$this->table_name . "
-                          WHERE email = :email";
+        // $existingEmail = "SELECT * FROM " .$this->table_name . "
+        //                   WHERE email = :email";
+        
         // insert query
         $query = "INSERT INTO " . $this->table_name . "
                 SET
