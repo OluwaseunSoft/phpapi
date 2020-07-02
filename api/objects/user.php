@@ -22,9 +22,7 @@ class User{
     }
  
     function create(){
-        // $existingEmail = "SELECT * FROM " .$this->table_name . "
-        //                   WHERE email = :email";
-        
+ 
         // insert query
         $query = "INSERT INTO " . $this->table_name . "
                 SET
@@ -74,7 +72,7 @@ function emailExists(){
     // query to check if email exists
     $query = "SELECT id, firstname, lastname, password
             FROM " . $this->table_name . "
-            WHERE status_ind = 'A' and email = ?
+            WHERE email = ?
             LIMIT 0,1";
  
     // prepare the query

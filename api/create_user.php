@@ -19,22 +19,17 @@ $user = new User($db);
  
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
-
-// set product property values
-// $user->email = $data->email;
-// $email_exists = $user->emailExists();
  
 // set product property values
 $user->firstname = $data->firstname;
 $user->lastname = $data->lastname;
 $user->email = $data->email;
-$email_exists = $user->emailExists();
 $user->password = $data->password;
 $user->phone_number = $data->phone_number;
 $user->role = $data->role;
 //$user->status_ind = $data->status_ind;
  
-if( $email_exists &&
+if(
     !empty($user->firstname) &&
     !empty($user->email) &&
     !empty($user->password) &&
