@@ -159,6 +159,7 @@ $.ajax({
     },
     error: function(xhr, resp, text){
     // on error, tell the user login has failed & empty the input boxes
+    //console.log(text);
     $('#response').html("<div class='alert alert-danger'>Login failed. Email or password is incorrect.</div>");
     login_form.find('input').val('');
 }
