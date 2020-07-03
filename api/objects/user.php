@@ -66,7 +66,7 @@ class User{
 			$content = "Click this link to activate your account. <a href='" . $actual_link . "'>" . $actual_link . "</a>";
 			$mailHeaders = "From: Admin\r\n";
 			if(mail($toEmail, $subject, $content, $mailHeaders)) {
-				$message = "You have registered and the activation mail is sent to your email. Click the activation link to activate you account.";	
+				$message = "You have registered and the activation mail is sent to your email. Click the activation link to activate you account, thank you.";	
                 $type = "success";
             }
             else {
