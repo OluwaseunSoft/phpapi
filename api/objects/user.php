@@ -72,7 +72,7 @@ function emailExists(){
     // query to check if email exists
     $query = "SELECT id, firstname, lastname, password
             FROM " . $this->table_name . "
-            WHERE email = ?
+            WHERE status_ind = 'A' and email = ?
             LIMIT 0,1";
  
     // prepare the query
@@ -101,7 +101,7 @@ function emailExists(){
         $this->firstname = $row['firstname'];
         $this->lastname = $row['lastname'];
         $this->password = $row['password'];
-        $this->status_ind = $row['status_ind'];
+       // $this->status_ind = $row['status_ind'];
  
         // return true because email exists in the database
         return true;
