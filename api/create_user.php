@@ -42,6 +42,7 @@ if( !$email_exists &&
  
     // display message: user was created
     echo json_encode(array("message" => "User was created."));
+            
 }
  
 // message if unable to create user
@@ -51,7 +52,7 @@ else{
     http_response_code(400);
  
     // display message: unable to create user
-    echo json_encode(array("message" => "Unable to create user."));
+    echo json_encode(array("message" => "Unable to create user. Email Already Exists"));
 }
 
 ?>
