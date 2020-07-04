@@ -15,6 +15,7 @@ class User{
     public $role;
     public $phone_number;
     public $status_ind;
+    public $register;
  
     // constructor
     public function __construct($db){
@@ -22,7 +23,8 @@ class User{
     }
  
     function create(){
- 
+
+                
         // insert query
         $query = "INSERT INTO " . $this->table_name . "
                 SET
@@ -32,7 +34,8 @@ class User{
                     password = :password,
                     phone_number = :phone_number, 
                     role = :role,
-                    status_ind = 'D'";
+                    status_ind = 'D',
+                    registered = 'N' ";
      
         // prepare the query
         $stmt = $this->conn->prepare($query);
@@ -60,29 +63,20 @@ class User{
      
         // execute the query, also check if query was successful
         if($stmt->execute()){
-            $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"."activate.php?id=". $this->email ;
-			$toEmail = $this->email;
-			$subject = "User Registration Activation Email";
-			$content = "Click this link to activate your account. <a href='" . $actual_link . "'>" . $actual_link . "</a>";
-			$mailHeaders = "From: Admin\r\n";
-			if(mail($toEmail, $subject, $content, $mailHeaders)) {
-				$message = "You have registered and the activation mail is sent to your email. Click the activation link to activate you account, thank you.";	
-                $type = "success";
-            }
-            else {
-                $message = "Problem in registration. Try Again!";	
-            }
+           
             return true;
         }
      
         return false;
     }
+
+
      
    // check if given email exist in the database
 function emailExists(){
  
     // query to check if email exists
-    $query = "SELECT id, firstname, lastname, password
+    $query = "SELECT id, firstname, lastname, password, status_ind
             FROM " . $this->table_name . "
             WHERE status_ind = 'A' and email = ?
             LIMIT 0,1";
@@ -113,7 +107,52 @@ function emailExists(){
         $this->firstname = $row['firstname'];
         $this->lastname = $row['lastname'];
         $this->password = $row['password'];
-       // $this->status_ind = $row['status_ind'];
+        $this->status_ind = $row['status_ind'];
+ 
+        // return true because email exists in the database
+        return true;
+    }
+ 
+    // return false if email does not exist in the database
+    return false;
+}
+
+
+function emailForFreshUser(){
+ 
+    // query to check if email exists
+    $query = "SELECT id, firstname, lastname, password, status_ind
+            FROM " . $this->table_name . "
+            WHERE email = ?
+            LIMIT 0,1";
+ 
+    // prepare the query
+    $stmt = $this->conn->prepare( $query );
+ 
+    // sanitize
+    $this->email=htmlspecialchars(strip_tags($this->email));
+ 
+    // bind given email value
+    $stmt->bindParam(1, $this->email);
+ 
+    // execute the query
+    $stmt->execute();
+ 
+    // get number of rows
+    $num = $stmt->rowCount();
+ 
+    // if email exists, assign values to object properties for easy access and use for php sessions
+    if($num>0){
+ 
+        // get record details / values
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+ 
+        // assign values to object properties
+        $this->id = $row['id'];
+        $this->firstname = $row['firstname'];
+        $this->lastname = $row['lastname'];
+        $this->password = $row['password'];
+        $this->status_ind = $row['status_ind'];
  
         // return true because email exists in the database
         return true;
