@@ -9,12 +9,7 @@
         <title>Page Title - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
-        <style>
-        body {
-  background:url('http://localhost:8080/startbootstrap-new-age-gh-pages/img/delivery.png');
-  background-position: left;
-}
-        </style>
+        
     </head>
     <body class="bg-light" >
     <?php
@@ -31,27 +26,28 @@
          // exit;
         }
     }
-    require('db.php');
+    //require('db.php');
+    include_once 'config/database.php';
     session_start();
-    if(isset($_POST['email']))
-    {
-        $email = stripslashes($_REQUEST['email']);
-        $email = mysqli_real_escape_string($con, $email);
-        $password = stripslashes($_REQUEST['password']);
-        $password = mysqli_real_escape_string($con, $password);
+    // if(isset($_POST['email']))
+    // {
+    //     $email = stripslashes($_REQUEST['email']);
+    //     $email = mysqli_real_escape_string($con, $email);
+    //     $password = stripslashes($_REQUEST['password']);
+    //     $password = mysqli_real_escape_string($con, $password);
 
-        $query = "SELECT * FROM `logistic_users` WHERE email = '$email' AND password = '".md5($password)."'";
-        $result = mysqli_query($con, $query) or die(mysqli_error($con));
-        $rows = mysqli_num_rows($result);
-        if($rows == 1) {
-            $_SESSION['username'] = $email;
-            header("Location: index.php");
-        }else
-        {
-            header("Location: login.php?status="."failed");
+    //     $query = "SELECT * FROM `logistic_users` WHERE email = '$email' AND password = '".md5($password)."'";
+    //     $result = mysqli_query($con, $query) or die(mysqli_error($con));
+    //     $rows = mysqli_num_rows($result);
+    //     if($rows == 1) {
+    //         $_SESSION['username'] = $email;
+    //         header("Location: index.php");
+    //     }else
+    //     {
+    //         header("Location: login.php?status="."failed");
             
-        }
-    }
+    //     }
+    // }
     ?>
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
