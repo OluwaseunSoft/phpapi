@@ -30,7 +30,7 @@
                 <input type='password' class='form-control' id='password' name='password' placeholder='Password'>
             </div>
  
-            <button type='submit' class='btn btn-primary'>Login</button>
+            <button type='submit' id='submit_form' class='btn btn-primary'>Login</button>
         </form>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
@@ -39,7 +39,7 @@
     <script>
          $(document).ready(function(){
         // trigger when login form is submitted
-$(document).on('submit', '#login_form', function(){
+$(document).on('click', '#submit_form', function(){
  
  // get form data
  var login_form=$(this);
