@@ -19,9 +19,11 @@ body { padding-top: 5rem; }
 #corbs{
     padding-left: 0mm;
     padding-top: 0mm;
+    padding-right: 0mm;
 }
 
 .p234{
     margin-left: 66px;
     margin-bottom: 50px;
+    border: 0ch;
 }
