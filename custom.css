@@ -10,6 +10,7 @@ body { padding-top: 5rem; }
     text-shadow: antiquewhite;
     color: azure;
     text-decoration: dashed;
+    font-style: initial;
 }
 
 #create{
