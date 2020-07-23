@@ -18,6 +18,7 @@ body { padding-top: 5rem; }
     float: right;
     width: 100px;
     top: 200px;
+    bottom: 200px;
 }
 
 #corbs{
