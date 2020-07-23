@@ -4,6 +4,7 @@ body { padding-top: 5rem; }
 #upmouse{
     display: block;
     text-align: center;
+    padding-inline-start: 0em;
 }
 
 #drpdwn{
@@ -17,7 +18,7 @@ body { padding-top: 5rem; }
     font-size: small;
     float: right;
     width: 100px;
-    top: 200px;
+    top: 500px;
     bottom: 200px;
 }
 
