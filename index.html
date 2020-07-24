@@ -18,20 +18,40 @@
  
          <!-- where main content will appear -->
          <div id="content"></div>
-         <h2>Login</h2>
-        <form id='login_form'>
-            <div class='form-group'>
-                <label for='email'>Email address test</label>
-                <input type='email' class='form-control' id='email' name='email' placeholder='Enter email'>
-            </div>
- 
-            <div class='form-group'>
-                <label for='password'>Password</label>
-                <input type='password' class='form-control' id='password' name='password' placeholder='Password'>
-            </div>
- 
-            <button type='submit' class='btn btn-primary'>Login</button>
-        </form>
+         <h2>Sign Up</h2>
+         <form id='sign_up_form'>
+             <div class="form-group">
+                 <label for="firstname">Firstname</label>
+                 <input type="text" class="form-control" name="firstname" id="firstname" required />
+             </div>
+
+             <div class="form-group">
+                 <label for="lastname">Lastname</label>
+                 <input type="text" class="form-control" name="lastname" id="lastname" required />
+             </div>
+
+             <div class="form-group">
+                 <label for="email">Email</label>
+                 <input type="email" class="form-control" name="email" id="email" required />
+             </div>
+
+             <div class="form-group">
+                 <label for="password">Password</label>
+                 <input type="password" class="form-control" name="password" id="password" required />
+             </div>
+
+             <div class="form-group">
+                 <label for="phone_number">Phone Number</label>
+                 <input type="text" class="form-control" name="phone_number" id="phone_number" required />
+             </div>
+
+             <div class="form-group">
+                 <label for="role">Roles</label>
+                 <input type="text" class="form-control" name="role" id="role" required />
+             </div>                      
+
+             <button type='submit' class='btn btn-primary'>Sign Up</button>
+         </form>
          <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
