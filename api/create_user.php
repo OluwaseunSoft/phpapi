@@ -8,7 +8,7 @@
 // require 'C:\wamp64\composer\vendor\phpmailer\phpmailer\src\SMTP.php';
 
 // required headers
-header("Access-Control-Allow-Origin: * ");
+
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
