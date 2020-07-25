@@ -20,6 +20,7 @@ body { padding-top: 5rem; }
     width: 100px;
     top: 500px;
     bottom: 200px;
+    left: initial;
 }
 
 #corbs{
