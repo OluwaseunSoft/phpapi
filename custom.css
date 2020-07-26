@@ -12,6 +12,7 @@ body { padding-top: 5rem; }
     color: azure;
     text-decoration: dashed;
     font-style: initial;
+    padding-inline-start: 0em;
 }
 
 #create{
