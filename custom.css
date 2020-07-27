@@ -6,13 +6,14 @@ body { padding-top: 5rem; }
     text-align: center;
     padding-inline-start: 0em;
     bottom: 90px;
+    height: 56px;
 }
 
 #drpdwn{
     text-shadow: antiquewhite;
     color: azure;
     text-decoration: dashed;
-    font-style: initial;
+    font-style: relative;
     padding-inline-start: 0em;
 }
 
