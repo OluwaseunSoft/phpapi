@@ -26,6 +26,7 @@ body { padding-top: 5rem; }
     top: 500px;
     bottom: 200px;
     left: initial;
+    resize: vertical;
 }
 
 #corbs{
