@@ -20,6 +20,14 @@ body { padding-top: 5rem; }
     padding-inline-start: 0em;
 }
 
+#malachi{
+    text-shadow: antiquewhite;
+    color: azure;
+    text-decoration: dashed;
+    font-style: relative;
+    padding-inline-start: 0em;
+}
+
 #create{
     font-size: small;
     float: right;
