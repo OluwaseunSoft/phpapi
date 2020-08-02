@@ -25,6 +25,7 @@ body { padding-top: 5rem; }
     color: azure;
     text-decoration: dashed;
     text-align: center;
+    background-color: blue;
 }
 
 #create{
