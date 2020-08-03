@@ -26,6 +26,7 @@ body { padding-top: 5rem; }
     text-decoration: dashed;
     text-align: center;
     background-color: blue;
+    text-transform: lowercase;
 }
 
 #create{
