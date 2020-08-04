@@ -8,8 +8,6 @@ body { padding-top: 5rem; }
     bottom: 90px;
     height: 56px;
     width: 56px;
-    padding-bottom: 56px;
-    padding-top: 56px;
 }
 
 #drpdwn{
@@ -18,6 +16,7 @@ body { padding-top: 5rem; }
     text-decoration: dashed;
     font-style: relative;
     padding-inline-start: 0em;
+    font-weight: bolder;
 }
 
 #malachi{
