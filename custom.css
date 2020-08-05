@@ -5,9 +5,7 @@ body { padding-top: 5rem; }
     display: block;
     text-align: center;
     padding-inline-start: 0em;
-    bottom: 90px;
-    height: 56px;
-    width: 56px;
+    position: relative;
 }
 
 #drpdwn{
