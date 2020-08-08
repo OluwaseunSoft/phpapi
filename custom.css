@@ -6,15 +6,11 @@ body { padding-top: 5rem; }
     text-align: center;
     padding-inline-start: 0em;
     position: relative;
-    margin-right: initial;
-    margin-left: initial;
+    margin-top: initial;
 }
 
 #drpdwn{
     text-shadow: antiquewhite;
-    color: azure;
-    text-decoration: dashed;
-    font-style: relative;
     padding-inline-start: 0em;
     font-weight: bolder;
 }
@@ -24,8 +20,6 @@ body { padding-top: 5rem; }
     color: azure;
     text-decoration: dashed;
     text-align: center;
-    background-color: blue;
-    text-transform: lowercase;
 }
 
 #create{
@@ -34,8 +28,6 @@ body { padding-top: 5rem; }
     width: 100px;
     top: 500px;
     bottom: 200px;
-    left: initial;
-    resize: vertical;
 }
 
 #corbs{
@@ -49,6 +41,5 @@ body { padding-top: 5rem; }
     margin-left: 66px;
     margin-bottom: 50px;
     border: 0ch;
-    font-size: 900;
-    font-weight: bolder;
+    padding-inline-end: 0cm;
 }
