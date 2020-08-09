@@ -2,9 +2,7 @@ body { padding-top: 5rem; }
 .starter-template { padding: 3rem 1.5rem; }
 #logout{ display:none; }
 #upmouse{
-    display: block;
-    text-align: center;
-    padding-inline-start: 0em;
+    text-size-adjust: 0mm;
     position: relative;
     margin-top: initial;
 }
@@ -23,8 +21,6 @@ body { padding-top: 5rem; }
 }
 
 #create{
-    font-size: small;
-    float: right;
     width: 100px;
     top: 500px;
     bottom: 200px;
@@ -34,12 +30,10 @@ body { padding-top: 5rem; }
     padding-left: 0mm;
     padding-top: 0mm;
     padding-right: 0mm;
-    padding-bottom: 0ch;
 }
 
 .p234{
     margin-left: 66px;
     margin-bottom: 50px;
     border: 0ch;
-    padding-inline-end: 0cm;
 }
