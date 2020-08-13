@@ -12,8 +12,7 @@ body { padding-top: 5rem; }
     text-shadow: antiquewhite;
     padding-inline-start: 0em;
     font-weight: bolder;
-    font-size: 90px;
-    padding-top: 60px;
+    text-transform: uppercase;
 }
 
 #malachi{
