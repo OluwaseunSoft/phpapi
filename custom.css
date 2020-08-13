@@ -5,6 +5,7 @@ body { padding-top: 5rem; }
     text-size-adjust: 0mm;
     position: relative;
     margin-top: initial;
+    margin-bottom: initial;
 }
 
 #drpdwn{
@@ -12,6 +13,7 @@ body { padding-top: 5rem; }
     padding-inline-start: 0em;
     font-weight: bolder;
     font-size: 90px;
+    font-weight: 90px;
     font-family: sans-serif 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
