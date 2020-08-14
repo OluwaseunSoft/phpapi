@@ -19,24 +19,5 @@ body { padding-top: 5rem; }
 #malachi{
     text-shadow: antiquewhite;
     color: azure;
-    text-decoration: dashed;
-    text-align: center;
-}
-
-#create{
-    width: 100px;
-    top: 500px;
-    bottom: 200px;
-}
-
-#corbs{
-    padding-left: 0mm;
-    padding-top: 0mm;
-    padding-right: 0mm;
-}
-
-.p234{
-    margin-left: 66px;
-    margin-bottom: 50px;
-    border: 0ch;
+    font-display: none;
 }
