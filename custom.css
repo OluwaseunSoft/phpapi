@@ -4,7 +4,7 @@ body { padding-top: 5rem; }
 #upmouse{
     text-size-adjust: 0mm;
     position: relative;
-    margin-top: initial;
+    padding-right: 30px;
     margin-bottom: initial;
 }
 
