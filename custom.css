@@ -1,10 +1,7 @@
 body { padding-top: 5rem; }
 .starter-template { padding: 3rem 1.5rem; }
 #logout{ display:none; }
-#upmouse{
-    text-size-adjust: 0mm;
-    position: relative;
-    padding-right: 30px;
+#upmouse{font-size: 300px;
     margin-bottom: initial;
 }
 
