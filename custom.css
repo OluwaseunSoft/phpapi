@@ -3,6 +3,7 @@ body { padding-top: 5rem; }
 #logout{ display:none; }
 #upmouse{font-size: 300px;
     margin-bottom: initial;
+    margin-top: 7px;
 }
 
 #drpdwn{
