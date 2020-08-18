@@ -17,4 +17,5 @@ body { padding-top: 5rem; }
     text-shadow: antiquewhite;
     color: azure;
     font-display: none;
+    text-rendering: initial;
 }
