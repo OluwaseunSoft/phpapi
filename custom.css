@@ -17,6 +17,6 @@ body { padding-top: 5rem; }
 #malachi{
     text-shadow: antiquewhite;
     color: azure;
-    font-display: unset;
+    font-display: inherit;
     text-rendering: initial;
 }
