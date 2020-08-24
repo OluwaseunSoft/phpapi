@@ -10,7 +10,7 @@ body { padding-top: 5rem; }
     text-shadow: blue;
     padding-inline-start: 0em;
     font-weight: bolder;
-    text-transform:initial;
+    text-transform:unset;
     height: 67px;
 }
 
