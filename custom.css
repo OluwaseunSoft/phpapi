@@ -20,4 +20,5 @@ body { padding-top: 5rem; }
     color: azure;
     font-display: inherit;
     text-rendering: initial;
+    margin-top: 7px;
 }
