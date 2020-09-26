@@ -4,11 +4,14 @@ body { padding-top: 5rem; }
 
 #drpdwn{
     text-transform:unset;
+    height: 67px;
+    color: azure;
 }
 
 #passa{
     text-shadow: antiquewhite;
     font-size: 78px;
+    position: sticky;
 }
 
 #massa{
