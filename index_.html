@@ -286,7 +286,7 @@ function showLoggedOutMenu(){
 // show home page
 function showHomePage(){
  
- // validate jwt to verify access
+ // validate jwt to verify access lpoooo
  var jwt = getCookie('jwt');
  $.post("api/validate_token.php", JSON.stringify({ jwt:jwt })).done(function(result) {
 
