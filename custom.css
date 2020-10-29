@@ -13,4 +13,5 @@ body { padding-top: 5rem; }
     padding-left: 0ex;
     font-family: Arial, monospace, sans-serif;
     min-height: fit-content;
+    line-height: 0em;
 }
