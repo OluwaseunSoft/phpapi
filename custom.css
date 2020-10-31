@@ -7,6 +7,12 @@ body { padding-top: 5rem; }
     position: inherit;
 }
 
+#clubsa{
+    text-shadow: antiquewhite;
+    font-size: 78px;
+    position: inherit;
+}
+
 #massa{
     padding-left: 0ex;
     font-family: Arial, monospace, sans-serif;
