@@ -11,7 +11,7 @@ body { padding-top: 5rem; }
 #clubsa{
     text-shadow: lemonchiffon;
     font-size: 78px;
-    position: inherit;
+    position:sticky;
 }
 
 #massa{
