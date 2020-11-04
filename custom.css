@@ -5,6 +5,7 @@ body { padding-top: 5rem; }
     text-shadow: antiquewhite;
     font-size: 78px;
     position: inherit;
+    width: initial;
 }
 
 #clubsa{
