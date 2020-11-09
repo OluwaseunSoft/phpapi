@@ -16,8 +16,7 @@ body { padding-top: 5rem; }
 
 #clu{
     text-shadow: mediumseagreen;
-    font-size: 78px;
-    position:sticky;
+    background-color: palegoldenrod;
 }
 
 #massa{
