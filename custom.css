@@ -1,12 +1,6 @@
 body { padding-top: 5rem; }
 .starter-template { padding: 3rem 1.5rem; }
 #logout{ display:none; }
-#passa{
-    text-shadow: antiquewhite;
-    font-size: 78px;
-    position: inherit;
-    width: initial;
-}
 
 #clubsa{
     text-shadow: magenta;
