@@ -12,6 +12,7 @@ body { padding-top: 5rem; }
     text-shadow: mediumseagreen;
     background-color: palegoldenrod;
     font-size: 0rem;
+    padding-block: initial;
 }
 
 #massa{
