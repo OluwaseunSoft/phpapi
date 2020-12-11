@@ -118,7 +118,7 @@ $(document).on('submit', '#sign_up_form', function(){
      },
      error: function(xhr, resp, text){
          // on error, tell the user sign up failed
-         $('#response').html("<div class='alert alert-danger new class' data='site-heaven'>Unable to sign up. Try again Probably, email Already Exists for this user. </div>");
+         $('#response').html("<div class='alert alert-danger new class blindness' data='site-heaven'>Unable to sign up. Try again Probably, email Already Exists for this user. </div>");
      }
  });
 
@@ -202,7 +202,7 @@ $.ajax({
     success : function(result) {
  
         // tell the user account was updated
-        $('#response').html("<div class='alert alert-success'>Account was updated.</div>");
+        $('#response').html("<div class='alert alert-success'>Account was updated with new records.</div>");
  
         // store new jwt to coookie
         setCookie("jwt", result.jwt, 1);
