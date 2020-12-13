@@ -133,7 +133,7 @@ else{
     http_response_code(400);
  
     // display message: unable to create user
-    echo json_encode(array("message" => "Unable to create user. Email Already Exists"));
+    echo json_encode(array("message" => "Unable to create user. Email Already Exists. Try again"));
 }
 
 ?>
