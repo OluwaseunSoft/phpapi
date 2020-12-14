@@ -73,7 +73,7 @@ if( !$email_exists &&
     }
  
     // display message: user was created
-    echo json_encode(array("message" => "User was created."));
+    echo json_encode(array("message" => "User was created. Login to portal"));
 
 //     /* Open the try/catch block. */
 
