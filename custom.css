@@ -9,8 +9,8 @@ body { padding-top: 5rem; }
 }
 
 #clu{
-    text-shadow: mediumseagreen;
-    background-color: palegoldenrod;
+    text-shadow: darkblue;
+    background-color: rgb(87, 85, 66);
     font-size: 0rem;
     padding-block: initial;
     size: inherit;
