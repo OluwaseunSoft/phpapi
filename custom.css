@@ -11,9 +11,7 @@ body { padding-top: 5rem; }
 #clu{
     text-shadow: darkblue;
     background-color: rgb(87, 85, 66);
-    font-size: 0rem;
-    padding-block: initial;
-    size: inherit;
+   padding-right: 7ch;
 }
 
 #massa{
