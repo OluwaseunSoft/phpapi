@@ -1,6 +1,8 @@
 body { padding-top: 5rem; }
 .starter-template { padding: 3rem 1.5rem; }
-#logout{ display:none; }
+#logout{ display:none; 
+ position: initial;
+}
 
 #clubsa{
     text-shadow: magenta;
