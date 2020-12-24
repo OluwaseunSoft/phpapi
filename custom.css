@@ -17,10 +17,6 @@ body { padding-top: 5rem; }
    word-wrap: break-word;
 }
 
-#massa{
-    padding-left: 0ex;
-    font-family: Arial, Verdana, Tahoma, sans-serif, sans-serif;
-    min-height: fit-content;
-    line-height: 0pc;
-    max-width: max-content;
+.readyblok{
+    padding:88mm ;
 }
