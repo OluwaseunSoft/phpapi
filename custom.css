@@ -5,11 +5,7 @@ body { padding-top: 5rem; }
 }
 
 #clubsa{
-    text-shadow: magenta;
-    font-size: 78px;
-    position:sticky;
-    border: khaki;
-    margin-top: 90px;
+    float: right;
 }
 
 #clu{
