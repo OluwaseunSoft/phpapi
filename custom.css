@@ -6,13 +6,10 @@ body { padding-top: 5rem; }
 
 #clubsa{
     float: right;
+    top: 97%;
 }
 
 #clu{
    padding-right: 7ch;
    word-wrap: break-word;
-}
-
-.readyblok{
-    padding:88mm ;
 }
