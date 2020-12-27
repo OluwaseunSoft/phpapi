@@ -7,9 +7,11 @@ body { padding-top: 5rem; }
 #clubsa{
     float: right;
     top: 97%;
+    text-align: start;
 }
 
 #clu{
    padding-right: 7ch;
    word-wrap: break-word;
+   border: aqua;
 }
