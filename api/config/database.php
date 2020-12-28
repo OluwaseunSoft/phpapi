@@ -22,5 +22,11 @@ class Database{
  
         return $this->conn;
     }
+
+    public function TestCrew()
+    {
+        # code...
+        echo "Word";
+    }
 }
 ?>
