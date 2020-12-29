@@ -26,7 +26,7 @@ class Database{
     public function TestCrew()
     {
         # code...
-        echo "Word";
+        echo "The time is " . date("h:i:sa");
     }
 }
 ?>
