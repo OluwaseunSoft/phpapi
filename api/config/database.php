@@ -26,7 +26,11 @@ class Database{
     public function TestCrew()
     {
         # code...
-        echo "The time is " . date("h:i:sa");
+        
+        if(date("h:i:sa") != null)
+        {
+            echo "The time is " . date("h:i:sa");
+        }
     }
 }
 ?>
