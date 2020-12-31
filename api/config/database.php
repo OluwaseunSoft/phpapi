@@ -29,6 +29,10 @@ class Database{
         {
             echo "The time is " . date("h:i:sa");
         }
+        else
+        {
+            echo "Check today's date";
+        }
     }
 }
 ?>
