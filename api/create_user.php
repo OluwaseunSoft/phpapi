@@ -65,7 +65,8 @@ if( !$email_exists &&
     $content = "Click this link to activate your account". "<a href='" . $actual_link . "'>" . $actual_link . "</a>";
     $mailHeaders = "From: Admin\r\n";
     if(mail($toEmail, $subject, $content, $mailHeaders, $headers)) {
-        $message = "You have registered and the activation mail is sent to your email. Click the activation link to activate you account, thank you.";	
+        $message = "You have registered and the activation mail is sent to your email. Click 
+        the activation link to activate you account, thank you for registering.";	
         $type = "success";
     }
     else {
